@@ -1,0 +1,25 @@
+{
+  "name": "booksshop",
+  "version": "1.0.0",
+  "description": "Site de vente de livres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aabibata/booksshop.git"
+  },
+  "author": "Bibata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aabibata/booksshop/issues"
+  },
+  "homepage": "https://github.com/aabibata/booksshop#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "node-fs": "^0.1.7"
+  }
+}
