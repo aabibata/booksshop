@@ -9,6 +9,9 @@ var app = express();
 hbs.registerPartials(__dirname + '/views/partials')
 app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/images'));
+app.use(express.static(__dirname + '/views'));
+
 
 app.use((req, res, next)=>{//middleware
     var now = new Date().toString();
@@ -27,6 +30,10 @@ hbs.registerHelper('screamIt', (text) => {
     return text.toUpperCase();
 });
 
+/*hbs.registerHelper('getImage1', () => {
+  return imageAirport;
+});*/
+
 app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: 'Home Page',
@@ -41,7 +48,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/projects', (req, res) => {
-  res.render('project.hbs', {
+  res.render('projects.hbs', {
     pageTitle: 'Projects'
   });
 });
@@ -56,3 +63,6 @@ app.get('/bad', (req, res) => {
 app.listen(port, () => {
   console.log( `Server is up on port ${port}`);
 });
+
+
+//module.exports.app = app;

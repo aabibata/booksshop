@@ -4,8 +4,9 @@
   "description": "Site de vente de livres",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node server.js"
+    "test": "mocha **/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\"",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,14 @@
   },
   "homepage": "https://github.com/aabibata/booksshop#readme",
   "dependencies": {
+    "expect": "^1.20.2",
     "express": "^4.16.3",
     "hbs": "^4.0.1",
+    "mocha": "^5.2.0",
+    "mongodb": "^2.2.5",
     "node-fs": "^0.1.7"
+  },
+  "devDependencies": {
+    "supertest": "^2.0.0"
   }
 }

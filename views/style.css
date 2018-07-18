@@ -1,0 +1,50 @@
+footer{
+	position: fixed;
+	height:100px;
+	width: 100%;
+	background-color: gray;
+	bottom: 0;
+	/*margin-bottom: 0px;*/
+}
+header{
+	background-color: black;
+	width: 100%;
+}
+.contenant{
+width: 80%;
+margin:auto;
+}
+/*#airport {
+width: 30%;
+height: 200px;
+margin: auto;
+}*/
+hr{
+	width: 100%;
+}
+#projet2{
+	position: relative;
+	display: inline;
+}
+.gauche{
+	width: 50%;
+	float: left;
+}
+.divImag{
+	width: 50%;
+	text-align: center;
+	float: right;
+}
+h1{
+	text-align: center;
+	color: blue;
+}
+
+/* style pour la page home*/
+.diapo{
+margin:0 auto;
+width: 960px;
+height: 500px;
+border: 9px solid #333;
+background-image:url("/images/aeroport.PNG");
+}

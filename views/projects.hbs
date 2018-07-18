@@ -2,20 +2,167 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Some Website</title>
+    <link rel ="stylesheet" href="style.css" type="text/css" />
+    <title>Projects </title>
+    
   </head>
   <body>
     {{> header}}
+    <div class="contenant">
+        <h1>Mes projets JAVA </h1>
+        <ol>
+            <li><a href="#projet1">Projet final J2EE</a></li>
+            <li><a href="#projet2">Projet pour le cours de d’Hypermédia J2EE </a></li>
+            <li><a href="#projet3">Projet java (Swing, JDBC) </a></li>
+            <li><a href="#projet4">Orienté-Ojbet Java</a></li>
+            <li><a href="#projet5">Programme structrée Java</a></li>
+        </ol>
+        <div id="projet1">
+            <hr/> </br>
+            <div class="gauche">
+                <h3> 1. &nbsp;&nbsp;Projet de fin de formation (Application Web en J2EE)</h3> 
+                <b> Environnement </b> : Windows 7/10 </br>
+                <b>IDE</b>: NetBeans</br>
+                -&nbsp;&nbsp;	Utilisation de la méthode de gestion Agile (SCRUM) </br>
+                -&nbsp;&nbsp; 	Analyse et modélisation des données selon la technologie UML</br>
+                -&nbsp;&nbsp;	L’architecture adaptée est 3-tiers (multicouches) </br>
+                -&nbsp;&nbsp;	Utilisation du design pattern DAO (Data Access Object) et MVC </br>
+                -&nbsp;&nbsp;	Création et gestion de la base de données en MySQL </br>
+                -&nbsp;&nbsp;	Utilisation des librairies Twilio d’envoi et réception des SMS </br>
+                -&nbsp;&nbsp;	Utilisation des threads pour rafraichir avec la page avec les nouvelles données de vol reçues</br>
+                -&nbsp;&nbsp;	Utilisation de JUnit pour les tests unitaires et des entrées/sorties pour charger les données</br></br>
 
-<ul>
-    <li>Projet final J2EE</li>
-    <li>Projet pour le cours de d’Hypermédia J2EE </li>
-    <li>Projet java (Swing, JDBC) </li>
-    <li>Orienté-Ojbet Java</li>
-    <li>Programme structrée Java</li>
-</ul>
-    <p>Some text here</p>
+                L’application permet : </br>
+                -&nbsp;&nbsp; Aux internautes de consulter en temps réel la liste des vols (départs ou Arrivées), de créer des alertes SMS concernant 
+                des changements sur l’état d’un vol auquel ils souscrivent.</br>
+                -&nbsp;&nbsp; À l’administrateur de se connecter avec son nom d’utilisateur et mot de passe pour charger le fichier initial des vols.</br>
 
+                <p><b>Outils et technologies utilisés </b> : IBM Rational Rose, Team Services, Github, Serveur d’application Glassfish, 
+                    Serveur de Base de données Uwamp, MySQL, Bootstrap, Javascript, JSP, CSS.
+                </p>
+            </div>
+            <div class="divImag" >
+                </br></br></br> </br></br>
+                <img id="airport" src="aeroport.PNG" />
+                </br></br></br></br></br>
+            </div>
+        </div>
+        <div id="#projet2">
+            <hr/> </br>
+            <div class="gauche">
+                <h3> 2. &nbsp; &nbsp;Projet du Cours Hypermedia (Application Web en J2EE)</h3> 
+                <b> Environnement </b> : Windows 7/10 </br>
+                <b>IDE</b>: Eclipse Oxygen</br>
+                -	Analyse et modélisation des données selon la technologie UML</br>
+                -	L’architecture utilisée est MVC (Modèle Vue Contrôleur)</br>
+                -	La couche de données utilise le design pattern DAO</br>
+                -	Utilisation des librairies d’envoie de courriel</br>
+
+                L’application permet :</br>
+                À un internaute de :</br>
+                - s'inscrire sur le site web </br>
+                - afficher la liste des livres</br>
+                - afficher les livres par catégorie </br>
+                - remplir un panier d’achat à partir d’articles sélectionnés</br>
+                - visualiser le contenu de ce panier d’achat, </br>
+                - modifier les quantités des articles</br>
+                - retirer un produit</br>
+                - passer à la caisse </br>
+                - envoyer sa commande par mail et sera enregistrée dans une base de données.</br>
+                À l’administrateur de se connecter et faire la mise à jour des livres.
+
+                <p><b>Outils et technologies utilisés </b>: Serveur d’application Apache-Tomcat9, Serveur de Base de données Uwamp, 
+                    MySQL, Bootstrap, Javascript, JSP,CSS
+                <p/>
+            </div> 
+            <div class="divImag" >
+                <img id="ebooks" src="librairie.PNG" title="Home page"/>
+            </div>
+            <!--<div>
+                 <img src="listBook.PNG" />
+            </div>-->
+        </div>
+    <div id="projet3">
+        <hr/> </br>
+        <div class="gauche">
+            <h3> 2. &nbsp; &nbsp;Projet du Cours Hypermedia (Application Web en J2EE)</h3> 
+                <b> Environnement </b> : Windows 7/10 </br>
+                <b>IDE</b>: Eclipse Oxygen</br>
+            <p>L’application permet d’ajouter et de supprimer des étudiants à un groupe ou d’éditer un étudiant du groupe pour modifier ses données. </br>
+            L’application suit les standards architecturaux. En particulier, elle est multicouches et adopte le pattern MVC. </br>
+            Les données des étudiants et des groupes sont sauvegardées dans une base de données MySQL.</br>
+            La modélisation des étudiants et des groupes ont été fait avec l’aide de classes entités et une classe DAO pour gérer la persistance des données.</br>
+            Une interface graphique est créée avec les composant Swing pour permettre à l’utilisateur de gérer un groupe. 
+            L’interface graphique permet de : </br>
+            choisir quel groupe gérer à partir de son numéro ; 
+            afficher un étudiant à la fois ; </br>
+            afficher le nombre total d’étudiants dans le groupe ainsi que la moyenne du groupe; </br>
+            offrir une barre de navigation avec des boutons premier, précédent, suivant et dernier pour passer d’un étudiant à une autre.</br>
+    	    L’application permet d’ajouter de nouveaux étudiants à un groupe, de modifier les informations d’un étudiant et de supprimer des étudiants. </p>
+        </div>
+        <div class="divImag" >
+            <img id="gestEtu" src="appSwing.PNG" />   
+        </div>
+    </div>
+    <div id="projet4">
+    <hr/> </br>
+    <div>
+        <p><h3>Programmation en Java Orientée Objet</h3> : 
+            Application console pour la gestion des départements et des Employés (Cadres et Vendeurs) qui y travaillent. 
+        </p>
+        <p> <b>IDE</b>: JCreator </p>
+        <p>Application Orientée-Objet qui utilise les notion d’héritage, de polymorphisme et l’agrégation. </p>
+        
+        Utilisation des tableaux et d’ArrayList pour représenter les ventes des employés dans la classe Vendeur et pour représenter les employés dans la classe Département. 
+	        Implémentation de l’interface Comparable pour comparer les noms des employés.</br>
+	        Implémentation des accesseurs (getters) et mutateurs (setters).</br>
+	        Implémentation des constructeurs nécessaires.</br>
+•	        Le surcharge des méthodes toString() et equals().</br>
+
+        &nbsp;-&nbsp;&nbsp;Attribuer un numéro unique (auto-incrément )de vente au moment de la création d’un objet Vente.</br>
+        &nbsp;-&nbsp;&nbsp;Calculer le montant et la commission d’une vente.</br>
+        &nbsp;-&nbsp;&nbsp;Une méthode augmenter() pour augmenter la commission du pourcentage passé en paramètre pour la vente dont le numéro est passé en paramètre.</br>
+        &nbsp;-&nbsp;&nbsp;La classe Vendeur est un héritage de la classe Employé et elle permet :
+        &nbsp;-&nbsp;&nbsp;L’agrégation d’un ArrayList pour la gestion des ventes de chaque vendeur.</br>
+        &nbsp;-&nbsp;&nbsp;Implémentation des méthodes ajouter, supprimerEmploye(), tri() calculerSalaireTotale() et calculerSalaireMoyenne() dans les classes appropriées.</br>
+        &nbsp;-&nbsp;&nbsp;Utilisation de l’interface fonctionnelle Bonus avec la méthode ajouterBonus.</br>
+        &nbsp;-&nbsp;&nbsp;Utilisation d’un tableau des pointeurs vers des objets des classes Cadre et Vendeur en utilisant le polymorphisme.</br>
+            &nbsp;-&nbsp;&nbsp;Intégration du traitement des exceptions</br>
+
+        </div>
+
+
+
+    
+    
+    </div>
+    <div id="projet5">
+        <hr/>
+        <div class="gauche">
+            <p><h3> 5.&nbsp;&nbsp;Programmation structurée </h3> 
+                Application console pour la gestion des dépenses d’une famille pour une période de six (6) mois
+            </p>
+            <b>Environnement </b> : Windows 7/10 
+            <p><b>IDE</b>: JCreator</p>
+
+                Le programme permet :</br>
+                &nbsp;-&nbsp;&nbsp; Le remplissage initial du tableau des dépenses à partir du clavier.</br>
+                &nbsp;-&nbsp;&nbsp; Les validations appropriées des données accompagnées des messages d’erreurs appropriés.</br>
+                &nbsp;-&nbsp;&nbsp; Affichage du tableau des dépenses.</br>
+                &nbsp;-&nbsp;&nbsp; Une fonction depensesSemestre pour afficher la dépense totale semestrielle.</br>
+                &nbsp;-&nbsp;&nbsp; Une procédure depensesMois pour afficher la dépense totale de chaque mois.</br>
+                &nbsp;-&nbsp;&nbsp; Une méthode depensesCategorie pour afficher la dépense semestrielle par catégorie de dépenses.</br>
+                &nbsp;-&nbsp;&nbsp; Une fonction depensesMoisMoyenne pour afficher la dépense moyenne par mois.</br>
+                &nbsp;-&nbsp;&nbsp; Une fonction depensesCategorieMoyenne pour afficher la moyenne par catégorie.</br>
+                &nbsp;-&nbsp;&nbsp; Une fonction moisDepensesMax pour afficher le mois avec la dépense totale maximale.</br>
+                &nbsp;-&nbsp;&nbsp; Une fonction categorieDepenseMin pour afficher la catégorie avec la dépense semestrielle minimale.</br>
+    </div>
+    <div class="divImag" >
+        <img id="gestBudget" src="budget.PNG" />
+        
+    </div>
+  </div>
+  </div>
     {{> footer}}
   </body>
 </html>
