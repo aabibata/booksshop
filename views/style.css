@@ -1,33 +1,71 @@
 footer{
-	position: fixed;
-	height:100px;
+	background-color:#00086E;
+	position: relative;
+	height:80px;
 	width: 100%;
-	background-color: gray;
+	display: inline-block;
 	bottom: 0;
-	/*margin-bottom: 0px;*/
+	top:15px;
+	font-size: 18px;
+	color:white;
 }
 header{
-	background-color: black;
+	background-color:#00086E;
+	height:80px;
 	width: 100%;
+	font-size: 25px;
+	color:white;
+}
+header a{
+	text-decoration: none;
+	color:white; 
+	font-size: 20px;
+}
+
+h2{
+	text-align: center;
+	font-style:italic;
 }
 .contenant{
-width: 80%;
-margin:auto;
+	width: 80%;
+	margin: 2px 0px;
+	margin:auto;
+	border: solid;
+	border-color: gray;
+	border-width: 1px;
+	box-shadow: 6px 6px 0px gray;
+	display: block;
 }
-/*#airport {
-width: 30%;
-height: 200px;
-margin: auto;
-}*/
+
+.menu{
+	position:relative;
+	margin:2% 13%;
+	height:20px;
+	width:90px;
+	Display:inline-block;
+	text-align:center;
+}
+#about{
+	height: 550px;
+	text-align: center;
+}
 hr{
-	width: 100%;
+	width: 98%;
 }
 #projet2{
 	position: relative;
 	display: inline;
 }
+#projet4{
+	margin-left: 1%;
+	width: 99%;
+}
+#projet5{
+	height: 560px;
+}
 .gauche{
-	width: 50%;
+	margin-left: 1%;
+	width: 49%;
 	float: left;
 }
 .divImag{

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/aabibata/booksshop#readme",
   "dependencies": {
+    "bootstrap": "^4.1.2",
     "expect": "^1.20.2",
     "express": "^4.16.3",
     "hbs": "^4.0.1",
