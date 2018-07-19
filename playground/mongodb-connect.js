@@ -3,7 +3,7 @@ const {MongoClient, ObjectID} = require('mongodb');
 
 /*var user ={name:'Bibata', age:35};
 var {name}=user;
-console.log(name);   // exemple destructuring (affectation par décomposition)*/
+console.log(name);   // exemple de destructuring (affectation par décomposition)*/
 
 MongoClient.connect('mongodb://localhost:27017/Library', (err, db) => {
   if (err) {
@@ -11,7 +11,7 @@ MongoClient.connect('mongodb://localhost:27017/Library', (err, db) => {
   }
   console.log('Connected to MongoDB server');
 
- /* db.collection('Todos').insertOne({
+  /*db.collection('Todos').insertOne({
     text: 'Something to do',
    completed: false
    }, (err, result) => {
@@ -22,19 +22,19 @@ MongoClient.connect('mongodb://localhost:27017/Library', (err, db) => {
     console.log(JSON.stringify(result.ops, undefined, 2));
    });*/
 
-  // Insert new doc into Users (name, age, location)
- /* db.collection('Users').insertOne({
-    _id=123;
+  // Insert new doc into Users (name, email, passwd, adress , userType)
+  /*db.collection('Users').insertOne({
+    //_id=123; pour attribuer un id personnalisé
     name: 'Bibata',
-    age: 25,
-    location: 'Montreal'
+    email: 'infoba@gmail.com',
+    passwd: 'adm123',
+    adress: 'Montreal',
+    userType:'admin'
   }, (err, result) => {
     if (err) {
       return console.log('Unable to insert user', err);
     }
-
     console.log(result.ops);
-  });
-*/
+  });*/
   db.close();
 });
