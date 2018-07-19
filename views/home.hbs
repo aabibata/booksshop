@@ -3,37 +3,21 @@
   <head>
     <meta charset="utf-8">
     <link rel ="stylesheet" href="style.css" type="text/css" /> 
-    <link href="thumbnail-slider.css" rel="stylesheet" type="text/css" />
-    <script src="thumbnail-slider.js" type="text/javascript"></script>
     <title>Portfolio - my profil</title>
   </head>
   <body>
     {{> header}}  <!--pour inclure une page hbs -->
-
     <h2>Bienvenue sur mon protfolio</h2>
-
     <div style="padding:80px 0;">
-        <div id="thumbnail-slider">
-            <div class="inner">
-                <ul>
-                    <li>
-                        <a class="thumb" href="aeroport.PNG"></a>
-                    </li>
-                    <li>
-                        <a class="thumb" href="librairie.PNG"></a>
-                    </li>
-                    <li>
-                        <a class="thumb" href="listBook.PNG"></a>
-                    </li>
-                    <li>
-                        <a class="thumb" href="appSwing.PNG"></a>
-                    </li>
-                                        
-                </ul>
-            </div>
+        <div id="animation">
+            <marquee>
+                <img class="refImage" src="aeroport.PNG" />
+                <img class="refImage" src="librairie.PNG" />
+                <img class="refImage" src="listBook.PNG" />
+                <img class="refImage" src="appSwing.PNG" title=""Application Swing>/>
+            </marquee>                          
         </div>
-    </div>
-    
+    </div>  
     <!--<p>{{screamIt welcomeMessage}}</p> exemple appel de function hbs-->  
     {{> footer}}
   </body>

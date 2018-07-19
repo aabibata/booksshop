@@ -46,7 +46,9 @@ h2{
 	text-align:center;
 }
 #about{
-	height: 550px;
+	width: 70%;
+	height: 540px;
+	margin:auto;
 	text-align: center;
 }
 hr{
@@ -79,10 +81,9 @@ h1{
 }
 
 /* style pour la page home*/
-.diapo{
-margin:0 auto;
-width: 960px;
-height: 500px;
-border: 9px solid #333;
-background-image:url("/images/aeroport.PNG");
+
+#animation {
+    margin:0 auto;
+    width:40%;
+    position:relative;
 }
