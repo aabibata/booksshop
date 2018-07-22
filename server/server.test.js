@@ -1,7 +1,5 @@
 const request = require('supertest');
-
 const expect = require('expect');
-
 
 var app = require('./server').app;
 
@@ -27,7 +25,7 @@ it('should return my user object', (done) => {
     .expect(200)
     .expect((res) => {
       expect(res.body).toInclude({
-        name: 'Andrew',
+        name: 'Bibata',
         age: 25
       });
     })
