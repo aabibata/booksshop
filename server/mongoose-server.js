@@ -24,8 +24,9 @@ app.post('/todos', (req, res)=>{
 });
 
 app.listen(port, ()=>{
-    console.log( `Server is up on port ${port}`);
+    console.log( `Mongoose Server is up on port ${port}`);
 })
 
+module.exports={app};
 
 
