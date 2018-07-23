@@ -22,6 +22,18 @@ app.post('/todos', (req, res)=>{
         res.status(400).send(e);
     });
 });
+app.get('/todos', (req, res)=>{
+    Todos.find().then((todos)=>{
+        res.send({todos})
+    }, (e)=>{
+        res.status(400).send(e);
+    });
+})
+
+// GET todo/16569
+app.get('/todos/:id', (req, res)=>{
+    res.send(req.params);
+});
 
 app.listen(port, ()=>{
     console.log( `Mongoose Server is up on port ${port}`);
