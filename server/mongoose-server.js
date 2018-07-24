@@ -1,3 +1,5 @@
+const {ObjectID} = require('mongodb');
+
 var express = require('express');
 var bodyParser = require('body-parser');
 
@@ -32,7 +34,32 @@ app.get('/todos', (req, res)=>{
 
 // GET todo/16569
 app.get('/todos/:id', (req, res)=>{
-    res.send(req.params);
+    //res.send(req.params); return l'id mis en parametre dans l'url
+    id = req.params.id;
+    if (!ObjectID.isValid(id)) {
+        res.send(404);
+    }
+    Todos.findById(id).then((todo) => {
+        if (!todo) {
+            return res.status(404).send(e);
+          }
+          res.send(todo);
+       
+        }).catch((e) =>  res.status(400).send(e));
+});
+
+app.delete('/todos/:id', (req, res)=>{
+    id = req.params.id;
+    if (!ObjectID.isValid(id)) {
+        res.send(404);
+    }
+    Todos.findByIdAndRemove(id).then((todo) => {
+        if (!todo) {
+            return res.status(404).send(e);
+          }
+          res.send(todo);
+       
+        }).catch((e) =>  res.status(400).send(e));
 });
 
 app.listen(port, ()=>{
